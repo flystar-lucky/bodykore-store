@@ -22,8 +22,9 @@ export const updateWishlistAPI = async (
     id,
     wishlist,
   };
-  const body = JSON.stringify(data);
-  const res = await fetch(routes.api.wishlist.path, { method: 'POST', body });
-  const resJson = await res.json();
-  return resJson.metafields[0].id;
+  return;
+  // const body = JSON.stringify(data);
+  // const res = await fetch(routes.api.wishlist.path, { method: 'POST', body });
+  // const resJson = await res.json();
+  // return resJson.metafields[0].id;
 };
