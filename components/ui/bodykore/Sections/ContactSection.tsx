@@ -26,7 +26,7 @@ export default function ContactSection({ title1, title2, description, btnText1, 
     const onSubmit = async (data: ContactForm) => {
         const timestamp = new Date().toISOString();
         const body = JSON.stringify({ ...data, timestamp });
-        const res = await (await fetch('/api/contact', { method: 'POST', body })).json();
+        const res = await (await fetch('https://bucolic-conkies-e63e8e.netlify.app/api/contact', { method: 'POST', body })).json();
         setSuccess(res);
         reset();
     }
