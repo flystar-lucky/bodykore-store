@@ -7,9 +7,11 @@ import { getCustomerId } from 'services/shopify/storefront';
 export const getWishlistAPI = async (
   id: string
 ): Promise<string | undefined> => {
-  const res = await fetch(`${routes.api.wishlist.path}?id=${id}`, { method: 'GET' });
-  const resJson = await res.json();
-  return resJson.metafield?.value;
+  return;
+  // const res = await fetch(`${routes.api.wishlist.path}?id=${id}`, { method: 'GET' });
+  // const resJson = await res.json();
+  // console.log('whis', `${routes.api.wishlist.path}?id=${id}`);
+  // return resJson.metafield?.value;
 };
 
 export const updateWishlistAPI = async (
